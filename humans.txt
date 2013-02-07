@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Mrinalini Chandra
+    Jewellery Designer
+    Twitter: @AThingOfJoy
+    Location: India
+
+# THANKS
+
+    To the millions of people who appreciate design.
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
+    Jekyll, Vim, Git
