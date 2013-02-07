@@ -1,0 +1,19 @@
+# General Configuration
+
+# url: 
+top_title: Mrinalini Chandra
+title: Mrinalini Chandra
+subtitle: Jewellery Couture
+
+#date_format: "ordinal"
+
+email: chandramrinalini@gmail.com
+
+# Jekyll Configuration
+root: /
+
+titlecase: true
+
+pygments: true
+
+exclude: [README.md]
