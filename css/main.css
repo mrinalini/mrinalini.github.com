@@ -362,9 +362,14 @@ body {
 
 .collection-images a {
   float: left;
+  display: block;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
 }
 
 .collection-images a img {
+  width: 150px;
 
 }
 
