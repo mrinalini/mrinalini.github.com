@@ -60,8 +60,8 @@ textarea {
 Author's custom styles
 ========================================================================== */
 
-/* Lato should ideally be a temporary font until a better font is found. */
-body, button, input, select, textarea { font-family: "Lato", sans-serif; color: #444; }
+/* Lora should ideally be a temporary font until a better font is found. */
+body, button, input, select, textarea { font-family: "Lora", sans-serif; color: #444; }
 
 h1, h2, h3, h4 {
   font-weight: 900;
