@@ -10,21 +10,29 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/normalize.min.css">
 
-    <!-- We need to display the font as Fondamento -->
+    <!-- In the end, might want to add the lightbox CSS into the main.css file itself. Saves a request. -->
+    <link rel="stylesheet" href="/css/lightbox.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- We need to display the font as Fondamento and Lora -->
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic|Fondamento' rel='stylesheet' type='text/css'>
 
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
     {{ content }}
 
+    <!-- We need to use an older version of jQuery for now since the latest version
+         doesn't work with lightbox. 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+    --!>
+    <script src="/js/vendor/jquery-1.7.2.min.js"></script>
+    <script src="/js/lightbox.js"></script>
 
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 
     <script>
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

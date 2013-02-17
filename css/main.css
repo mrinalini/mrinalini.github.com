@@ -325,6 +325,49 @@ body {
   float: right;
 }
 
+.collection-list {
+
+}
+
+/* Collection styling */
+.collection {
+
+}
+
+.collection hr {
+  height: 0px;
+  border-top: 1px solid #afa;
+  border-bottom: 1px solid #ada;
+}
+
+.collection-content {
+  padding-right: 10px;
+  width: 290px;
+  float: left;
+}
+
+.collection-header {
+  font-size: 1.5em;
+  text-decoration: italic;
+}
+
+.collection-text {
+
+}
+
+.collection-images {
+  width: 300px;
+  float: right;
+}
+
+.collection-images a {
+  float: left;
+}
+
+.collection-images a img {
+
+}
+
 
 
 
