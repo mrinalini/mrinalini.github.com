@@ -60,7 +60,6 @@ textarea {
 Author's custom styles
 ========================================================================== */
 
-/* Lora should ideally be a temporary font until a better font is found. */
 body, button, input, select, textarea { font-family: "Lora", sans-serif; color: #444; }
 
 h1, h2, h3, h4 {
@@ -69,6 +68,7 @@ h1, h2, h3, h4 {
 }   
 
 body {
+  /* Without the antialiased property, the font seems unnaturally big on Chrome on Mac. */
   -webkit-font-smoothing: antialiased;
   background-color: #DC8673;
   background: url('../img/background.jpg');
@@ -86,6 +86,41 @@ body {
   width: 960px;
 }
 
+/* Elaborate frame for the border. Using image slicing to reduce resource consumption. */
+.container-border {
+  background-image: url('../img/border.png'); 
+  background-repeat: no-repeat;
+  height: 60px;
+  position: absolute;
+  width: 60px;
+  z-index: 40;
+}
+
+#container-border-top-left {
+  background-position: 0px 0px;
+  left: -5px;
+  top: -5px;
+}
+
+#container-border-top-right {
+  background-position: -60px 0px;
+  right: -5px;
+  top: -5px;
+}
+
+#container-border-bottom-left {
+  background-position: 0px -60px;
+  bottom: -5px;
+  left: -5px;
+}
+
+#container-border-bottom-right {
+  background-position: -60px -60px;
+  bottom: -5px;
+  right: -5px;
+}
+/* ------------------------------------------------------------------------------------ */
+
 .fixed-height {
   height: 600px;
 }
@@ -96,6 +131,7 @@ body {
   box-shadow: inset 0px 0px 3px rgba(255, 255, 99, 0.85); 
   background: url('../img/lotus.png') no-repeat bottom right;
   border-radius: 5px;
+  z-index: 2;
 }
 
 #main {
@@ -103,32 +139,41 @@ body {
   float: left;
 } 
 
-#heading {
+.home-heading {
+  background: url('../img/name.png') no-repeat center;
+  height: 150px;
+  margin-top: 150px;
   width: 660px;
 }
 
-.home-heading {
-  height: 150px;
-  margin-top: 150px;
-  background: url('../img/name.png') no-repeat center;
-}
-
 .other-heading {
+  margin-top: 15px;
+  margin-left: 20px;
+  float: left;
+  background: url('../img/name2.png') no-repeat center left;
   height: 75px;
   text-align: left;
-  background: url('../img/name2.png') no-repeat center left;
+  width: 470px;
+}
+
+#message {
+  font-size: 13px;
+  padding: 20px;
 }
 
 #page-heading {
+  position: relative;
   font-family: "Fondamento";
   display: inline-block;
   font-size: 1.4em;
-  padding: 5px 30px 5px 30px;
+  padding: 5px 20px 5px 20px;
   min-width: 200px;
   border-radius: 0 5px 5px 0;
   background: url('../img/coraltexture.png');
   color: #DDEE92;
   margin-bottom: 10px;
+  left: -21px;
+  top: -10px;
 }
 
 #page-heading span {
@@ -140,8 +185,8 @@ body {
   min-height: 400px;
   background-color: rgba(255, 255, 222, 0.8);
   border: 1px solid #FFB;
-  margin-left: 20px;
-  padding: 10px;
+  margin: 5px 25px 33px 25px;
+  padding: 20px;
   border-radius: 5px;
   /* box-shadow: 0 0px 5px 0px #AA6; */
 }
@@ -189,12 +234,12 @@ body {
 }
 
 #home-nav {
-  margin-top: 200px;
+  margin-top: 220px;
   width: 640px;
   background: url('../img/coraltexture.png');
   text-align: center;
   list-style-type: none;
-  padding: 15px 310px 15px 10px;
+  padding: 5px 310px 3px 10px;
   height: 30px;
 }
 
@@ -203,9 +248,9 @@ body {
   font-size: 1.2em;
   font-weight: 100;
   font-family: "Fondamento";
-  margin-left: 15px;
-  margin-right: 15px;
-  height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 15px;
   color: #DDEE92;
 }
 
@@ -218,6 +263,7 @@ body {
   color: #DDEE92;
   border-style: none;
   text-decoration: none;
+  text-shadow: 0px 1px 0px rgba(90, 0, 0, 0.3);
   -webkit-transition: background-color .25s linear;
   transition: background-color .25s linear;
 }
@@ -226,59 +272,90 @@ body {
   color: white;
 }
 
-#side {
-  width: 240px;
+#nav {
   float: right;
-  padding-left: 10px;
-  padding-right: 10px;
 }   
 
-.side-list {
+.nav-list {
+  border-radius: 5px;
+  background: url('../img/coraltexture.png');
   font-family: "Fondamento";
   margin: 10px;
-  margin-top: 20px;
-  margin-left: 0;
-  padding-left: 0;
-  overflow: hidden;
-  border-radius: 5px;
+  margin-top: 32px;
+  margin-right: 25px;
+  padding: 0px 5px;
 }   
 
-.side-list li {
-  background: url('../img/coraltexture.png');
+.nav-list > li {
+  border-right: 1px dotted #DDEE92; 
+  display: inline-block;
+  font-size: 1em;
   list-style: none;
-  font-size: 1.1em;
-  padding-left: 20px;
-  border-bottom: 1px dotted #DDEE92; 
+  position: relative;
 }
 
-.side-list li:last-child {
-  border-bottom: none;
+.nav-list > li:last-child {
+  border-right: none;
 }
 
-.side-list a {
-  display: block;
+.nav-list li a {
+  display: inline-block;
   color: #DDEE92;
   border-style: none;
-  padding: 10px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-decoration: none;
   text-shadow: 0px 1px 0px rgba(90, 0, 0, 0.3);
-  -webkit-transition: background-color .25s linear;
-  transition: background-color .25s linear;
 }
 
-.side-list a span {
+.nav-list li a span {
   vertical-align: middle;
 }
 
-.side-list li a:hover {
+
+.nav-list li a:hover {
   color: white;
 }
-.side-list li:hover {
-  background-color: #F88379; 
+
+.nav-list li:hover {
+  background-color: rgba(150, 30, 30, 0.3); 
 }
 
-.side-list a img {
+.nav-list a img {
   padding-right: 10px;
+}
+
+.nav-list li ul {
+  font-family: "Lora";
+  font-size: 13px;
+  border-top: 1px solid #B50;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: url('../img/coraltexture.png');
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  min-width: 150px;
+  padding: 0px;
+  padding-bottom: 5px;
+}
+
+.nav-list li:hover ul {
+  display: block;
+}
+
+.nav-list li li {
+  display: block;
+  border-bottom: 1px dotted #DDEE78; 
+}
+
+.nav-list li li:last-child {
+  border-bottom: none;
+}
+.nav-list li li a {
+  display: block;
 }
 
 .highlight pre {
