@@ -155,6 +155,7 @@ body {
 }
 
 #page-heading {
+  position: relative;
   background: url('../img/coraltexture.png');
   border-radius: 0 5px 5px 0;
   color: #DDEE92;
@@ -168,16 +169,7 @@ body {
   position: relative;
   text-shadow: 0px 1px 0px rgba(90, 0, 0, 0.3);
   top: -10px;
-}
-
-#content {
-  font-size: 14px;
-  min-height: 400px;
-  background-color: rgba(255, 255, 222, 0.8);
-  border: 1px solid #FFB;
-  margin: 5px 25px 33px 25px;
-  padding: 20px;
-  border-radius: 5px;
+  width: 536px;
 }
 
 /* Menu */
@@ -323,6 +315,41 @@ body {
 .other .nav li ul {
   top: 1em;
   left: 0;
+}
+
+/* Content */
+#content {
+  font-size: 14px;
+  min-height: 400px;
+  background-color: rgba(255, 255, 222, 0.6);
+  border: 1px solid #FFB;
+  margin: 5px 24px 33px 24px;
+  border-radius: 5px;
+}
+
+.full-content {
+  background-color: rgba(255, 255, 222, 0.6);
+  padding: 20px;
+}
+
+.left-content {
+  background-color: rgba(255, 255, 222, 0.6);
+  width: 540px;
+  float: left;
+  border-right: 1px solid #ada;
+  padding: 20px;
+  padding-right: 19px;
+  min-height: 400px;
+}
+
+.right-content {
+  float: right;
+  width: 330px;
+}
+
+.right-content img {
+  border-top-right-radius: 5px;
+
 }
 
 #main-footer {
