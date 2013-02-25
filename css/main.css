@@ -190,6 +190,7 @@ body {
 }
 
 .nav ul {
+  margin: 0;
   background: url('../img/coraltexture.png');
 }
 
@@ -246,7 +247,7 @@ body {
 /* Home */
 .home .nav {
   margin-top: 160px;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .home .nav > ul {
@@ -277,16 +278,9 @@ body {
 }
 
 .home .nav li ul {
-}
-
-.home .nav li:hover ul {
   font-size: 14px;
   top: 34px;
   left: 0;
-  margin: 0;
-}
-
-.home .nav li li {
 }
 
 /* Other */
@@ -298,15 +292,15 @@ body {
 
 .other .nav > ul {
   border-radius: 5px;
-
+  height: 32px;
   padding: 0px 5px;
 }
 
-.other .nav > ul li {
+.other .nav > ul > li {
   border-right: 1px dotted #DDEE92; 
 }
 
-.other .nav > ul li:last-child {
+.other .nav > ul > li:last-child {
   border-right: none;
 }
 
@@ -318,11 +312,8 @@ body {
   color: white;
 }
 
-.other .nav li:hover {
-}
-
 .other .nav li ul {
-  top: 1em;
+  top: 32px;
   left: 0;
 }
 
