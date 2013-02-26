@@ -76,6 +76,12 @@ body {
   margin-bottom: 30px;
 }
 
+hr {
+  border-top: 1px solid #8C8;
+  border-bottom: 1px solid #FFD;
+  height: 0px;
+}
+
 #container {
   background-color: #DDECC5;
   background: url('../img/backgrounddeer.jpg');
