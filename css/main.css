@@ -81,7 +81,7 @@ body {
   background: url('../img/backgrounddeer.jpg');
   border: 1px solid rgba(100, 0, 0, 0.5);
   border-radius: 5px;
-  box-shadow: inset 0px 0px 3px rgba(255, 255, 99, 0.85); 
+  box-shadow: inset 0px 0px 3px rgba(255, 255, 99, 0.85);
   margin: auto;
   position: relative;
   width: 960px;
@@ -89,7 +89,7 @@ body {
 
 /* Elaborate frame for the border. Using image slicing to reduce resource consumption. */
 .container-border {
-  background-image: url('../img/border.png'); 
+  background-image: url('../img/border.png');
   background-repeat: no-repeat;
   height: 60px;
   position: absolute;
@@ -136,7 +136,7 @@ body {
 #main {
   width: 659px;
   float: left;
-} 
+}
 
 .home #heading {
   background: url('../img/name.png') no-repeat center;
@@ -210,7 +210,7 @@ body {
 }
 
 .nav li:hover {
-  background-color: rgba(150, 30, 30, 0.3); 
+  background-color: rgba(150, 30, 30, 0.3);
 }
 
 .nav li li {
@@ -218,7 +218,7 @@ body {
   display: block;
   font-family: "Lora", sans-serif;
   text-align: left;
-  border-bottom: 1px dotted #DDEE78; 
+  border-bottom: 1px dotted #DDEE78;
 }
 
 .nav a {
@@ -297,7 +297,7 @@ body {
   float: right;
   margin: 32px 25px 10px 10px;
   padding: 0px 5px;
-}   
+}
 
 .other .nav > ul {
   border-radius: 5px;
@@ -306,7 +306,7 @@ body {
 }
 
 .other .nav > ul > li {
-  border-right: 1px dotted #DDEE92; 
+  border-right: 1px dotted #DDEE92;
 }
 
 .other .nav > ul > li:last-child {
