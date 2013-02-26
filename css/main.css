@@ -366,6 +366,24 @@ hr {
   width: 960px;
 }
 
+/* About Section */
+
+#about-section {
+  text-align: justify;
+}
+#profile-photo {
+  float: left;
+  margin: 0px 20px 20px 0px;
+  border:1px solid #8C8;
+  border-radius: 5px;
+}
+#profile-photo img {
+  border-radius: 5px;
+  height: 225px;
+  margin: 2px;
+}
+
+
 .collection-list {
 
 }
