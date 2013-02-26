@@ -342,29 +342,14 @@ hr {
   border-radius: 5px;
 }
 
-.full-content {
-  background-color: rgba(255, 255, 222, 0.6);
-  padding: 20px;
+.full-width {
+  width: 860px;
+  padding: 0 25px;
 }
 
-.left-content {
-  background-color: rgba(255, 255, 222, 0.6);
-  width: 540px;
-  float: left;
-  border-right: 1px solid #ada;
-  padding: 20px;
-  padding-right: 19px;
-  min-height: 400px;
-}
-
-.right-content {
-  float: right;
-  width: 330px;
-}
-
-.right-content img {
-  border-top-right-radius: 5px;
-
+.paragraph-width {
+  width: 560px;
+  padding: 0 175px;
 }
 
 #main-footer {
