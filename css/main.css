@@ -64,8 +64,8 @@ body, button, input, select, textarea { font-family: "Lora", sans-serif; color: 
 
 h1, h2, h3, h4 {
   font-weight: 900;
-  font-family: "Fondamento";
-}   
+  font-family: "Lora", serif;
+}
 
 body {
   /* Without the antialiased property, the font seems unnaturally big on Chrome on Mac. */
