@@ -82,6 +82,34 @@ hr {
   height: 0px;
 }
 
+blockquote:before {
+  font-size: 100px;
+  position: absolute;
+  content: '\201C';
+  left: -15px;
+  top: -20px;
+  font-family: "Lato", serif;
+}
+
+blockquote:after {
+  position: absolute;
+  font-size: 100px; 
+  content: '';
+  right: 0px;
+  bottom: -30px;
+  font-family: "Lato", serif;
+}
+
+blockquote {
+  position: relative;
+  font-family: Georgia, serif;
+  font-style: italic;
+  margin: 10px;
+  padding: 15px 50px;
+  text-align: justify;
+  font-size: 14px;
+}
+
 #container {
   background-color: #DDECC5;
   background: url('../img/backgrounddeer.jpg');
