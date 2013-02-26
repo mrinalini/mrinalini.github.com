@@ -46,28 +46,11 @@ layout: default
     </div>
     <div class="clearfix"></div>
     <div id="content" role="main">
-      {% if page.full_width %}
-        <div id="full-content">
-          <div id="page-heading">
-            {{ page.title }}
-          </div>
-          <br />
-          {{ content }}
-        </div>
-      {% else %}
-
-        <div class="left-content">
-          <div id="page-heading">
-            {{ page.title }}
-          </div>
-          <br />
-          {{ content }}
-        </div>
-        <div class="right-content">
-          <img src="{{page.right_image}}" />
-        </div>
-        <div class="clearfix"></div>
-      {% endif %}
+      <div id="page-heading">
+        {{ page.title }}
+      </div>
+      <br />
+      {{ content }}
     </div>
     <div class="clearfix"></div>
   <!-- </div> -->
