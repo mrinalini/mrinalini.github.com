@@ -373,8 +373,8 @@ blockquote {
 }
 
 .full-width {
-  width: 870px;
-  padding: 0 20px;
+  width: 840px;
+  padding: 0 40px;
 }
 
 .paragraph-width {
@@ -383,7 +383,7 @@ blockquote {
 }
 
 .one-third {
-  width: 270px;
+  width: 260px;
   padding: 10px;
 }
 
