@@ -424,6 +424,46 @@ blockquote {
 
 }
 
+/* Contact Section */
+#contact-section {
+
+}
+
+.contacts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.contacts li {
+  text-align: center;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.contact-details {
+  display: inline-block;
+}
+
+.contact-box {
+  border: 1px solid #8C8;
+  border-radius: 3px;
+  height: 50px;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 155, 0.1);
+  padding-top: 20px;
+}
+
+.fb-like-box {
+  border: 1px solid #8C8;
+  border-radius: 3px;
+  height: 70px;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 155, 0.1);
+  width: 270px;
+}
+
 /* Collection styling */
 .collection {
 

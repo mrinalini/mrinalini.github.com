@@ -4,4 +4,44 @@ top_title: Contact
 title: Contact
 ---
 
-This is where you can contact the super-talented designer. :-)
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=359507244129131";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="contact-section" class="full-width">
+  <ul class="contacts">
+    <li>
+    <div id="contact-email" class="one-third contact-details">
+      <img src="/img/contactemail.png" />
+      <h3>Email</h3>   
+      <hr />
+      <div class="contact-box">
+        <a href="mailto:info@mrinalinichandra.com">info@mrinalinichandra.com</a>
+      </div>
+    </div>
+    </li><li>
+
+    <div id="contact-facebook" class="one-third contact-details">
+      <img src="/img/contactfacebook.png" />
+      <h3>Facebook</h3>   
+      <hr />
+      <div class="fb-like-box" data-href="http://www.facebook.com/platform" data-width="260" data-show-faces="false" data-stream="false" data-border-color="#9C9" data-header="false"></div>
+    </div>
+    </li><li>
+    <div id="contact-twitter" class="one-third contact-details">
+      <img src="/img/contacttwitter.png" />
+      <h3>Twitter</h3>
+      <hr />
+      <div class="contact-box">
+      <a href="https://twitter.com/AThingOfJoy" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="true">Follow @AThingOfJoy</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+    </div>
+    </li>
+  </ul>
+</div>
