@@ -373,13 +373,18 @@ blockquote {
 }
 
 .full-width {
-  width: 860px;
-  padding: 0 25px;
+  width: 870px;
+  padding: 0 20px;
 }
 
 .paragraph-width {
   width: 560px;
   padding: 0 175px;
+}
+
+.one-third {
+  width: 270px;
+  padding: 10px;
 }
 
 #main-footer {
