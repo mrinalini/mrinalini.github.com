@@ -119,6 +119,11 @@ blockquote {
   margin: auto;
   position: relative;
   width: 960px;
+  display: none;
+}
+
+.no-js #container {
+  display: block;
 }
 
 /* Elaborate frame for the border. Using image slicing to reduce resource consumption. */
@@ -172,19 +177,27 @@ blockquote {
   float: left;
 }
 
+.home #heading-container {
+  margin-top: 150px;
+  height: 150px;
+  width: 660px;
+}
+
 .home #heading {
   background: url('../img/name.png') no-repeat center;
   height: 150px;
-  margin-top: 150px;
   width: 660px;
+}
+
+.other #heading-container {
+  float: left;
+  margin-top: 13px;
+  margin-left: 20px;
 }
 
 .other #heading {
   background: url('../img/name2.png') no-repeat center left;
-  float: left;
   height: 75px;
-  margin-top: 13px;
-  margin-left: 20px;
   width: 470px;
 }
 
@@ -243,6 +256,8 @@ blockquote {
   list-style: none;
   display: inline-block;
   position: relative;
+  -webkit-transition: background-color .15s linear .1s;
+  transition: background-color .15s linear .1s;
 }
 
 .nav li:hover {
@@ -262,6 +277,8 @@ blockquote {
   display: block;
   text-decoration: none;
   text-shadow: 0px 1px 0px rgba(90, 0, 0, 0.3);
+  -webkit-transition: color .15s linear;
+  transition: color .15s linear;
 }
 
 .nav a:hover {
@@ -290,9 +307,13 @@ blockquote {
 }
 
 /* Home */
-.home .nav {
+.home .nav-container {
   margin-top: 160px;
   margin-bottom: 45px;
+  height: 34px;
+}
+
+.home .nav {
 }
 
 .home .nav > ul {
@@ -304,6 +325,8 @@ blockquote {
 .home .nav > ul > li {
   font-size: 18px;
   height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .home .nav > ul > li a {
