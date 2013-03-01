@@ -110,6 +110,28 @@ blockquote {
   font-size: 14px;
 }
 
+#loader-container {
+  width: 32px;
+  height: 32px;
+  padding: 15px;
+  border-radius: 3px;
+  margin: auto;
+  text-align: center;
+  margin-top: 200px;
+  background-color: #DAEAC3;
+  border: 1px solid rgba(0, 100, 0, 0.7);
+}
+
+#loader {
+  width: 32px;
+  height: 32px;
+  background: url('../img/loader.gif') no-repeat center center; 
+}
+
+.no-js #loader-container {
+  display: none;
+}
+
 #container {
   background-color: #DDECC5;
   background: url('../img/backgrounddeer.jpg');
@@ -422,6 +444,11 @@ blockquote {
   text-align: center;
   text-shadow: 0px 1px 0px rgba(90, 0, 0, 0.3);
   width: 960px;
+  display: none;
+}
+
+.no-js #copyright-footer {
+  display: block;
 }
 
 /* About Section */
