@@ -537,6 +537,13 @@ ul.press-gallery {
   padding-bottom: 25px;
 }
 
+#contact-twitter .contact-box a {
+  visibility: hidden;
+}
+.no-js #contact-twitter .contact-box a {
+  visibility: visible;
+}
+
 .fb-like-box {
   border: 1px solid #8C8;
   border-radius: 3px;
