@@ -549,6 +549,16 @@ ul.press-gallery {
   visibility: visible;
 }
 
+#contact-email .contact-box a {
+  text-decoration: none;
+  /* Keeping it similar to Facebook. */
+  color: #3b5998;
+}
+
+#contact-email .contact-box a:hover {
+  text-decoration: underline;
+}
+
 .fb-like-box {
   border: 1px solid #8C8;
   border-radius: 3px;
