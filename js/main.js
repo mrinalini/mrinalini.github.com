@@ -5,16 +5,35 @@ p)))}var g=this,d=c.isFunction(c.Deferred)?c.Deferred():0,r=c.isFunction(d.notif
 n();return d?d.promise(g):g}})(jQuery);
 
 /* Custom Code */
-$('.home #heading, .home .nav, #container, #copyright-footer').hide();
+$(document).ready(function() {
+  $('.home #heading, .home .nav, #container, #copyright-footer').hide();
 
-$('#container').imagesLoaded(function() {
-  $('#loader-container').fadeOut(200).queue(function() {
-    $('#container').fadeIn(1000).queue(function() {
+  /* First, let us get hold of all the images that are there, including background images. */
+  var currentImages = $('#container img, .bg-img');
+  var images = $([]);
+  $.each(currentImages, function(){
+      var el = $(this),
+      image = el.css('background-image').replace(/"/g, '').replace(/url\(|\)$/ig, '');
+      if(image && image !== '' && image !== 'none')
+          images = images.add($('<img>').attr('src', image));
+      if(el.is('img'))
+          images = images.add(el);    
+  });
 
-      /* Need a friggin workaround for the twitter button as it doesn't show @username when display: none is set. */
-      $('#contact-twitter .contact-box').empty().html('<a href="https://twitter.com/AThingOfJoy" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="true">Follow @AThingOfJoy</a>\
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>')
-      $('.home #heading, .home .nav, #copyright-footer').fadeIn(1500);
-    });
+  images.imagesLoaded({
+    callback: function() {
+      $('#loader-container').fadeOut(200).queue(function() {
+        $('#container').fadeIn(1000).queue(function() {
+
+          /* Need a friggin workaround for the twitter button as it doesn't show @username when display: none is set. */
+          $('#contact-twitter .contact-box').empty().html('<a href="https://twitter.com/AThingOfJoy" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="true">Follow @AThingOfJoy</a>\
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>')
+          $('.home #heading, .home .nav, #copyright-footer').fadeIn(1500);
+        });
+      });
+    },
+    progress: function(isBroken, $images, $proper, $broken) {
+      $('#loader-percentage').html(Math.ceil(($proper.length + $broken.length)*100/$images.length));
+    }
   });
 });

@@ -112,7 +112,7 @@ blockquote {
 
 #loader-container {
   width: 32px;
-  height: 32px;
+  height: 42px;
   padding: 15px;
   border-radius: 3px;
   margin: auto;
@@ -126,6 +126,11 @@ blockquote {
   width: 32px;
   height: 32px;
   background: url('../img/loader.gif') no-repeat center center; 
+}
+
+#loader-percentage {
+  font-family: Georgia, sans-serif;
+  color: rgba(100, 0, 0, 0.5);
 }
 
 .no-js #loader-container {
