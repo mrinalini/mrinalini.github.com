@@ -7,7 +7,7 @@ n();return d?d.promise(g):g}})(jQuery);
 /* Custom Code */
 $('.home #heading, .home .nav, #container, #copyright-footer').hide();
 
-$('#container').imagesloaded(function() {
+$('#container').imagesLoaded(function() {
   $('#loader-container').fadeOut(200).queue(function() {
     $('#container').fadeIn(1000).queue(function() {
 
