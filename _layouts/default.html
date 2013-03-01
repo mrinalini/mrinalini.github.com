@@ -8,11 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ site.title }}{% if page.top_title %} - {{ page.top_title }}{% endif %}</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+
+    <!-- I was under the impression that this viewport tag would be helpful. Turns out, it isn't for this website. -->
+    <!-- <meta name="viewport" content="width=device-width"> -->
 
     <link rel="stylesheet" href="/css/normalize.min.css">
 
-    <!-- In the end, might want to add the lightbox CSS into the main.css file itself. Saves a request. -->
     <link rel="stylesheet" href="/css/main.css">
 
     <!-- We need to display the font as Fondamento and Lora -->
@@ -29,8 +30,10 @@
   </head>
   <body>
     <div id="loader-container">
-      <div id="loader"></div>
-      <div id="loader-percentage">0</div>
+      <div id="loader-box">
+        <div id="loader"></div>
+        <div id="loader-percentage">0</div>
+      </div>
     </div>
     {{ content }}
 

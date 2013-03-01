@@ -72,8 +72,8 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: #DC8673;
   background: url('../img/background.jpg');
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 hr {
@@ -111,12 +111,19 @@ blockquote {
 }
 
 #loader-container {
+  width: 960px;
+  margin: 0 auto;
+  height: 42px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.01)
+}
+
+#loader-box {
+  display: inline-block;
   width: 32px;
   height: 42px;
   padding: 15px;
   border-radius: 3px;
-  margin: auto;
-  text-align: center;
   margin-top: 200px;
   background-color: #DAEAC3;
   border: 1px solid rgba(0, 100, 0, 0.7);
@@ -143,7 +150,7 @@ blockquote {
   border: 1px solid rgba(100, 0, 0, 0.5);
   border-radius: 5px;
   box-shadow: inset 0px 0px 3px rgba(255, 255, 99, 0.85);
-  margin: auto;
+  margin: 0 auto;
   position: relative;
   width: 960px;
   display: none;
@@ -348,7 +355,7 @@ blockquote {
 
 .home .nav > ul {
   height: 34px;
-  padding: 0px 310px 0px 10px;
+  padding: 0px 30px 0px 10px;
   width: 640px;
 }
 
@@ -447,11 +454,11 @@ blockquote {
 #copyright-footer {
   color: #DDEE92;
   font-size: 14px;
-  margin: auto;
+  margin: 0 auto;
   padding: 10px;
   text-align: center;
   text-shadow: 0px 1px 0px rgba(90, 0, 0, 0.3);
-  width: 940px;
+  width: 910px;
   display: none;
 }
 
