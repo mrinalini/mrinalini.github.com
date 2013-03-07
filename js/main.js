@@ -46,13 +46,18 @@ $(document).ready(function() {
 
   images.imagesLoaded({
     callback: function() {
-      $('#loader-container').fadeOut(600, function() {
-        $('#container').fadeIn(1500, function() {
+      $('#loader-container').fadeOut(300, function() {
+        $('#container').fadeIn(900, function() {
 
           /* Need a friggin workaround for the twitter button as it doesn't show @username when display: none is set. */
           $('#contact-twitter .contact-box').empty().html('<a href="https://twitter.com/AThingOfJoy" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="true">Follow @AThingOfJoy</a>\
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>')
-          $('.home #heading, .home .nav, #copyright-footer').fadeIn(1500);
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>');
+          $('.home #heading, .home .nav, #copyright-footer').fadeIn(900, function() {
+            /* We want the animate-enhanced plugin to be disabled after the animations.
+             * This prevents any untoward interactions.
+             */
+            $.toggleDisabledByDefault();
+          });
         });
       });
     },
@@ -61,3 +66,4 @@ $(document).ready(function() {
     }
   });
 });
+
