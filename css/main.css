@@ -569,12 +569,14 @@ ul.press-gallery {
 }
 
 #press-grid li a {
+  display: inline-block;
+  width: 125px;
+  height: 125px;
+  overflow: hidden;
 }
 
 #press-grid img {
   position: relative;
-  width: 125px;
-  height: 125px;
   -webkit-transition: opacity .15s linear;
 }
 
