@@ -578,10 +578,7 @@ ul.press-gallery {
 #press-grid img {
   position: relative;
   -webkit-transition: opacity .15s linear;
-}
-
-#press-grid img:hover {
-  opacity: 0.7;
+  transition: opacity .15s linear;
 }
 
 /* Contact Section */

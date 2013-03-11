@@ -70,6 +70,24 @@ $(document).ready(function() {
       $('#loader-percentage').html(Math.ceil(($proper.length + $broken.length)*100/$images.length));
     }
   });
-  $('#press-grid .fresco').nailthumb(); 
+  $('#press-grid .fresco').imagesLoaded({
+    done: function($images) {
+      $images.each(function(index) {
+        $(this).parent().nailthumb({
+          fitDirection: 'top center',
+          replaceAnimation: 'fade',
+          animationTime: 100
+        });
+      });
+    }
+  });
+
+  /* This needs to be added since NailThumb sets opacity on image load. */
+  $('#press-grid .fresco img').hover(function() {
+    $(this).css({opacity: '0.7'});
+  }, function() {
+    $(this).css({opacity: '1'});
+  });
+
 });
 
