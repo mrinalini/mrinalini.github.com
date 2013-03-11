@@ -232,7 +232,7 @@ blockquote {
 .other #heading {
   background: url('../img/name2.png') no-repeat center left;
   height: 75px;
-  width: 470px;
+  width: 485px;
 }
 
 #page-heading:before {
@@ -391,8 +391,7 @@ blockquote {
 /* Other */
 .other .nav {
   float: right;
-  margin: 32px 25px 10px 10px;
-  padding: 0px 5px;
+  margin: 32px 25px 10px 0px;
 }
 
 .other .nav > ul {
