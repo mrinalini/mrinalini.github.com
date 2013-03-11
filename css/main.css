@@ -528,6 +528,57 @@ ul.press-gallery {
 .press-gallery li img:hover {
 }
 
+
+#press-left-side {
+  float: left;
+  width: 390px;
+  margin-left: 15px;
+  padding: 0 10px;
+}
+
+#press-right-side {
+  margin-left: 15px;
+  /* margin-left: 410px; 
+  width: 409px; 
+  border-left: 1px solid #8C8;
+*/
+  padding: 0px;
+}
+
+#press-grid {
+  min-height: 300px;
+}
+
+#press-grid ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
+}
+
+#press-grid li {
+  position: relative;
+  display: inline-block;
+  width: 125px;
+  height: 125px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+#press-grid li a {
+}
+
+#press-grid img {
+  position: relative;
+  width: 125px;
+  height: 125px;
+  -webkit-transition: opacity .15s linear;
+}
+
+#press-grid img:hover {
+  opacity: 0.7;
+}
+
 /* Contact Section */
 #contact-section {
 
