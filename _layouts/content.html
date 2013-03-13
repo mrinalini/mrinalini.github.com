@@ -51,6 +51,9 @@ layout: default
     <div class="clearfix"></div>
     <div id="content" role="main">
       <div id="page-heading" class="bg-img">
+        <!-- This is a hack to allow the bg-img present in the :after pseudo-element to be used in the imageLoaded plugin. -->
+        <div id="page-heading-after" class="hidden bg-img"></div>
+
         {{ page.title }}
       </div>
       <br />

@@ -262,6 +262,11 @@ blockquote {
   height: 28px;
 }
 
+#page-heading-after {
+  background: url('../img/coraltexturefade.png') no-repeat; 
+}
+
+
 #page-heading:after {
   opacity: 0.93;
   content: ' ';
