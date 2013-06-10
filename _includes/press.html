@@ -14,7 +14,7 @@
     <div id="press-grid">
       <ul>
         {% for image in page.press_images %}<li>
-        <a href="{{ image.url }}" class="fresco" data-fresco-group="grid" {% if image.caption %}data-fresco-caption="{{ image.caption }}"{% endif %}><img src="{{ image.url }}" /></a>
+        <a href="/images/press/{{ page.press_images_folder }}/{{ image.name }}" class="fresco" data-fresco-group="grid" {% if image.caption %}data-fresco-caption="{{ image.caption }}"{% endif %}><img src="/images/press/{{ page.press_images_folder }}/{{ image.name }}" /></a>
         </li>{% endfor %}      
       </ul>
     </div>
