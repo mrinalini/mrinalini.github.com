@@ -1,0 +1,23 @@
+<div id="press-section" class="full-width">
+  <ul class="press-gallery">
+    {% for entry in page.entries %}<li>
+    <div class="press-gallery-entry">
+      {% if entry.type == 'multiple' %}
+      <a href="/press/{{ entry.name }}.html">
+        <img src="/images/press/{{ entry.name }}/{{ entry.cover }}" />
+      </a>
+      {% else %}
+      <a href="/images/press/{{ entry.name }}/{{ entry.image }}" class="fresco" {% if entry.caption %} data-fresco-caption="{{ entry.caption }}" {% endif %}>
+        <img src="/images/press/{{ entry.name }}/{{ entry.cover }}" />
+      </a>
+      {% endif %}
+    </div>
+    <div class="press-gallery-entry-text">
+      {{ entry.text }}
+    </div>
+
+    </li>{% endfor %}
+  </ul>
+  <div class="clearfix"></div>
+</div>
+
