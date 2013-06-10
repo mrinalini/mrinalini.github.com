@@ -1,0 +1,22 @@
+<div id="press-section" class="full-width">
+  <div id="press-left-side">
+    <div id="press-gallery-header">
+      <h3>{{ page.press_header }}</h3>
+    </div>
+    <hr />
+    <div id="press-description">
+      <p>
+        {{ page.press_description }}
+      </p>
+    </div>
+  </div>
+  <div id="press-right-side">
+    <div id="press-grid">
+      <ul>
+        {% for image in page.press_images %}<li>
+        <a href="{{ image.url }}" class="fresco" data-fresco-group="grid" {% if image.caption %}data-fresco-caption="{{ image.caption }}"{% endif %}><img src="{{ image.url }}" /></a>
+        </li>{% endfor %}      
+      </ul>
+    </div>
+  </div>
+</div>
