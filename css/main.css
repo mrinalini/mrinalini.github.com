@@ -350,7 +350,7 @@ blockquote {
 /* Home */
 .home .nav-container {
   margin-top: 160px;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
   height: 34px;
 }
 
@@ -426,6 +426,23 @@ blockquote {
   left: 0;
 }
 
+/* Social */
+#social-section {
+
+}
+.social-buttons {
+  text-align: center;
+}
+
+.social-buttons li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.
+
 /* Content */
 #content {
   font-size: 14px;
@@ -452,7 +469,7 @@ blockquote {
 }
 
 #main-footer {
-  padding: 10px;
+  padding: 0px;
 }
 
 #copyright-footer {
@@ -626,10 +643,10 @@ ul.press-gallery {
   padding-bottom: 25px;
 }
 
-#contact-twitter .contact-box a {
+.twitter-button-workaround a {
   visibility: hidden;
 }
-.no-js #contact-twitter .contact-box a {
+.no-js .twitter-button-workaround a {
   visibility: visible;
 }
 
