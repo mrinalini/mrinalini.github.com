@@ -2,15 +2,20 @@
   <ul class="press-gallery">
     {% for entry in page.entries %}<li>
     <div class="press-gallery-entry">
-      {% if entry.type == 'multiple' %}
+      {% case entry.type %}
+      {% when 'external' %}
+      <a href="{{ entry.url }}" target="_blank">
+        <img src="/images/press/{{ entry.name }}/{{ entry.cover }}" />
+      </a>
+      {% when 'multiple' %}
       <a href="/press/{{ entry.name }}.html">
         <img src="/images/press/{{ entry.name }}/{{ entry.cover }}" />
       </a>
-      {% else %}
+      {% when 'single' %}
       <a href="/images/press/{{ entry.name }}/{{ entry.image }}" class="fresco" {% if entry.caption %} data-fresco-caption="{{ entry.caption }}" {% endif %}>
         <img src="/images/press/{{ entry.name }}/{{ entry.cover }}" />
       </a>
-      {% endif %}
+      {% endcase %}
     </div>
     <div class="press-gallery-entry-text">
       {{ entry.text }}
