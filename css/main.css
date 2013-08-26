@@ -428,8 +428,21 @@ blockquote {
 
 /* Social */
 #social-section {
-
+  height: 40px;
 }
+
+#social-facebook {
+  width: 81px;
+  height: 26px;
+  overflow: hidden;
+}
+
+#social-twitter {
+  width: 143px;
+  height: 26px;
+  overflow: hidden;
+}
+
 .social-buttons {
   text-align: center;
 }
