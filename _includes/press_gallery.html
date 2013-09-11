@@ -6,14 +6,17 @@
       {% when 'external' %}
       <a href="{{ entry.url }}" target="_blank">
         <img src="/images/press/{{ entry.name }}/{{ entry.cover }}" />
+        <div class="press-gallery-entry-type press-gallery-entry-external"></div>
       </a>
       {% when 'multiple' %}
       <a href="/press/{{ entry.name }}.html">
         <img src="/images/press/{{ entry.name }}/{{ entry.cover }}" />
+        <div class="press-gallery-entry-type press-gallery-entry-multiple"></div>
       </a>
       {% when 'single' %}
       <a href="/images/press/{{ entry.name }}/{{ entry.image }}" class="fresco" {% if entry.caption %} data-fresco-caption="{{ entry.caption }}" {% endif %}>
         <img src="/images/press/{{ entry.name }}/{{ entry.cover }}" />
+        <div class="press-gallery-entry-type press-gallery-entry-single"></div>
       </a>
       {% endcase %}
     </div>

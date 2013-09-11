@@ -545,6 +545,7 @@ ul.press-gallery {
 }
 
 .press-gallery li {
+  position: relative;
   width: 220px;
   height: 250px;
   float: left;
@@ -554,6 +555,29 @@ ul.press-gallery {
   text-align: center;
 }
 
+.press-gallery-entry-type {
+  width: 30px;
+  height: 30px;
+  background: #9C8 url('../img/entrytypes.png') no-repeat;
+  background: rgba(160, 220, 140, 0.7) url('../img/entrytypes.png') no-repeat;
+  position: absolute;
+  top: 185px;
+  left: 185px;
+  border-radius: 5px;
+  border: 1px solid rgba(55, 150, 55, 0.6);
+}
+.press-gallery-entry-external {
+  background-position: 5px 5px;
+}
+
+.press-gallery-entry-multiple {
+  background-position: 5px -55px;
+}
+
+.press-gallery-entry-single {
+  background-position: 5px -25px;
+
+}
 .press-gallery-entry-text {
   padding-top: 5px;
   height: 30px;
