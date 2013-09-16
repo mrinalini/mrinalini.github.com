@@ -263,14 +263,14 @@ blockquote {
 }
 
 #page-heading-after {
-  background: url('../img/coraltexturefade.png') no-repeat; 
+  background: url('../img/coraltexturefade.png') no-repeat;
 }
 
 
 #page-heading:after {
   opacity: 0.93;
   content: ' ';
-  background: url('../img/coraltexturefade.png') no-repeat; 
+  background: url('../img/coraltexturefade.png') no-repeat;
   position: absolute;
   right: -200px;
   top: 0px;
@@ -278,6 +278,50 @@ blockquote {
   float: right;
   width: 200px;
   height: 28px;
+}
+
+#preview-collection {
+  display: none;
+  position: relative;
+  width: 659px;
+}
+
+.no-js #preview-collection {
+  display: block;
+}
+
+#preview-collection img {
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 25, 0, 0.7);
+  left: 150px;
+  position: absolute;
+  top: 0px;
+}
+
+#preview-collection a {
+  background: url('../img/coraltexture.png');
+  border-radius: 3px;
+  color: #DDEE92;
+  padding: 20px 30px 15px 30px;
+  position: absolute;
+
+  top: 30px;
+  left: 237px;
+  height: 40px;
+  width: 200px;
+
+  font-family: "Fondamento", serif;
+  font-size: 1.4em;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgba(90, 0, 0, 0.3);
+  -webkit-transition: background-color .15s linear, color .15s linear;
+  transition: background-color .15s linear, color .15s linear;
+}
+
+#preview-collection a:hover {
+  background-color: rgba(150, 30, 30, 0.3);
+  color: white;
 }
 
 /* Menu */

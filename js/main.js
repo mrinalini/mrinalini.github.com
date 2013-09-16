@@ -64,7 +64,7 @@ $(document).ready(function() {
           });
 
           $.toggleDisabledByDefault();
-          $('.home #heading, .home .nav, #copyright-footer').css({display : 'block', opacity: '0'}).animate({opacity : '1', avoidCSSTransitions : false}, 900, function() {
+          $('.home #heading, .home .nav, #copyright-footer, #preview-collection').css({display : 'block', opacity: '0'}).animate({opacity : '1', avoidCSSTransitions : false}, 900, function() {
             /* We want the animate-enhanced plugin to be disabled after the animations.
              * This prevents any untoward interactions.
              */
